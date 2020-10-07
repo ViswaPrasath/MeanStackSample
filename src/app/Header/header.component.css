@@ -1,0 +1,21 @@
+.header__options{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px 8px;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+

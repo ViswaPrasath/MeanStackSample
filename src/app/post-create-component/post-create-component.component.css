@@ -3,3 +3,15 @@ mat-form-field {
     padding: 10px;
     margin: 10px auto;
 }
+
+mat-spinner{
+    margin: auto;
+}
+
+button{
+  margin: 10px;
+}
+
+input[type="file"]{
+    visibility: hidden;
+}
