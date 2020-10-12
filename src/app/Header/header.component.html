@@ -1,11 +1,17 @@
 <mat-toolbar color="primary">
   <span><a routerLink="/">Message</a></span>
     <div class="header__options">
-      <button routerLink="/create">
+      <button routerLink="/create" *ngIf="authStatus">
         Add post
       </button>
-      <button>
-        Sign In
+      <button routerLink="/auth/login" *ngIf="!authStatus">
+        Login
+      </button>
+      <button routerLink="/auth/signup" *ngIf="!authStatus">
+        Signup
+      </button>
+      <button *ngIf="authStatus" (click)= "logout()">
+        Logout
       </button>
     </div>
   </mat-toolbar>

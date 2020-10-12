@@ -5,7 +5,7 @@ module.exports = () => {
     // mongo "mongodb+srv://cluster0.tau9s.mongodb.net/<dbname>" --username viswaPrasath
 
     mongoose
-        .connect(" mongodb+srv://viswaPrasath:ZghhKqofQYrypvrQ@cluster0.tau9s.mongodb.net/PostApp?retryWrites=true&w=majority",
+        .connect(" mongodb+srv://viswaPrasath:chgYSv1OhTaW3ErN@cluster0.tau9s.mongodb.net/PostApp?retryWrites=true&w=majority",
             {
                 useNewUrlParser: true,
                 useUnifiedTopology: true

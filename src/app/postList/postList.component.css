@@ -5,3 +5,13 @@ mat-expansion-panel{
 mat-spinner{
     margin: auto;
 }
+
+.post__image{
+    margin: 10px  auto;
+    width: 100%;
+}
+
+.post__image > img {
+    width: 80%;
+    height: 100%;
+}
