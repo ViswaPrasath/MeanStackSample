@@ -56,12 +56,9 @@ export const ownImgType = (control: AbstractControl): Promise<{ [key: string]: a
   const re = new RegExp('^data:image');
   const frObs = Observable.create((observer: Observer<{ [key: string]: any }>) => {
     fileReader.onloadend = () => {
-     // console.log(re.exec(fileReader.result as string));
       if (re.exec(fileReader.result as string)) {
-       // console.log("image");
         observer.next(null);
       } else {
-       // console.log("not an image");
         observer.next({ invalidType: true })
       }
       observer.complete();
